@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+[data-collapse-target] {
+    &.collapse-hidden {
+        display: none;
+    }
+
+    &.collapse-show {
+        display: block;
+    }
+}
