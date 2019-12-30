@@ -1,0 +1,77 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 35px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 25px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+[data-sesam-target].sesam-hidden {
+  display: none;
+}
+
+[data-sesam-target].sesam-show {
+  display: block;
+}
+
+[data-sesam-trigger] {
+  cursor: pointer;
+}
+
+p {
+  margin-top: 15px;
+}
+
+p + p {
+  margin-top: 0px;
+}
+
+.intro h1 + p {
+  margin-top: 0px;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+ul ul {
+  margin-bottom: 10px;
+  padding-left: 16px;
+}
+
+ul li[data-sesam-trigger] {
+  list-style: none;
+}
+
+ul li[data-sesam-trigger].sesam-show svg.feather {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+ul li[data-sesam-trigger] strong svg.feather {
+  width: 18px;
+  vertical-align: -6px;
+  margin-right: 5px;
+}
+
+ul svg.feather {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+/*# sourceMappingURL=main.css.map */

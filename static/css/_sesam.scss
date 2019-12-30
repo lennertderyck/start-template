@@ -4,12 +4,16 @@
     padding: 0;
 }
 
-[data-collapse-target] {
-    &.collapse-hidden {
+[data-sesam-target] {
+    &.sesam-hidden {
         display: none;
     }
 
-    &.collapse-show {
+    &.sesam-show {
         display: block;
     }
+}
+
+[data-sesam-trigger] {
+    cursor: pointer;
 }
