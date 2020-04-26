@@ -32,6 +32,7 @@
     
     <!-- local assets -->
     <link rel="stylesheet" href="./static/css/main.min.css">
+    <link rel="stylesheet" href="https://lib.lennertderyck.be/assets/min/flexy-cards.css">
 </head>
 <body>
     <header>
@@ -63,15 +64,17 @@
                 <li data-sesam-trigger="css" data-sesam-parent="assets"><strong><i data-feather="arrow-right"></i>CSS</strong> (<a href="https://sass-lang.com/" target="_blank" rel="noopener">Sass</a>)
                     <ul data-sesam-target="css"  data-sesam-parent="assets">
                         <li>_base.scss</li>
+                        <li>_fonts.scss</li>
                         <li>_sesam.scss</li>
                         <li>_typography.scss</li>
+                        <li>flexy-cards.css (link): a flexbox grid for aligning cards or other items</li>
                         <li>main.scss: links all scss files and outputs one regular css file</li>
                     </ul>
                 </li>
                 <li data-sesam-trigger="js" data-sesam-parent="assets"><strong><i data-feather="arrow-right"></i>JavaScript</strong>
                     <ul data-sesam-target="js"  data-sesam-parent="assets">
                         <li>main.js</li>
-                        <li>sesam.js: collapse stuff [beta] (the collapse you see on this page)</li>
+                        <li>sesam.js (import): collapse stuff [beta] (the collapse you see on this page)</li>
                     </ul>
                 </li>
             </ul>
@@ -90,8 +93,8 @@
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
     
     <!-- scripts -->
-    <script src="./static/js/main.js"></script>
-    <script src="./static/js/sesam.js"></script>
+    <script type="module" src="./static/js/main.js"></script>
+    
     <script>
         /* Initialize feather icons */
         /* more info on https://feathericons.com/ and https://github.com/feathericons/feather#feather */

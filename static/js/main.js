@@ -1,15 +1,18 @@
-(() => {
-    const app = {
-        initialize() {
-            console.log('\n' + `%c[service] main.js ${arguments.callee.name}() running! \n` + ' ', 'color: #00d400; font-weight: bold');
-            console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
-        },
+import {callerName} from './common.js';
+import {sesamCollapse, sesam} from 'https://unpkg.com/sesam-collapse';
 
-        cached() {
-            console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
-        },
+const status = new callerName('main');
 
-    }
+const app = {
+    initialize() {
+        status.init()
+        
+        sesamCollapse.initialize();
+    },
 
-    app.initialize();
-})()
+    cached() {
+        status.add('cached');
+    },
+}
+
+app.initialize();
